@@ -7,6 +7,64 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+body{
+    font-family: "Barlow", sans-serif;
+}
 div, section{
     border: 1px solid tomato;
 }
+
+// Global styles (resets)
+
+section{
+    margin-top: 40px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+address{
+    margin-bottom: 0;
+}
+
+// Particular styles
+
+header{
+    background-color: cadetblue;
+    padding: 20px 0;
+
+    img{
+        border-radius: 75px;
+    }
+
+    a{
+        // color: wheat !important;
+    }
+
+    .col-information{
+        padding-left: 40px;
+    }
+
+    .contact{
+        margin-top: 10px;
+    }
+
+}
+
+#employment{
+
+    .employment-item{
+        margin-top: 20px;
+
+        .employment-years{
+            font-style: italic;
+        }
+    }
+}
+

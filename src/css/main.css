@@ -11979,6 +11979,48 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "Barlow", sans-serif;
+}
+
 div, section {
   border: 1px solid tomato;
+}
+
+section {
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+address {
+  margin-bottom: 0;
+}
+
+header {
+  background-color: cadetblue;
+  padding: 20px 0;
+}
+header img {
+  border-radius: 75px;
+}
+header .col-information {
+  padding-left: 40px;
+}
+header .contact {
+  margin-top: 10px;
+}
+
+#employment .employment-item {
+  margin-top: 20px;
+}
+#employment .employment-item .employment-years {
+  font-style: italic;
 }
