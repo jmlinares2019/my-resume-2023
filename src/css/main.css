@@ -11989,10 +11989,7 @@ textarea.form-control-lg {
 }
 body {
   font-family: "PixelOperator", sans-serif;
-}
-
-div, section {
-  border: 1px solid tomato;
+  color: #04394c;
 }
 
 section {
@@ -12009,22 +12006,33 @@ address {
 
 .section-heading {
   font-family: "PixelOperator-Bold";
-  border-bottom: 1px dashed cadetblue;
+  border-bottom: 1px dashed tomato;
 }
 
 header {
-  background-color: cadetblue;
-  padding: 20px 0;
+  background-color: #04394c;
+  color: white;
+  padding: 40px 0;
 }
-header img {
-  border-radius: 75px;
+header .col-picture {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header .col-picture img {
+  border-radius: 100px;
+}
+@media (min-width: 768px) {
+  header .col-picture img {
+    width: 100%;
+  }
 }
 header a {
-  color: floralwhite;
-  text-decoration: none;
+  color: tomato;
 }
 header .col-information {
-  padding-left: 40px;
+  /*  @media(min-width: 768px) {
+       padding-left: 40px;
+   } */
 }
 header .col-information h1.my-name, header .col-information .my-name.h1 {
   font-family: "PixelOperator-Bold", sans-serif;
@@ -12033,20 +12041,27 @@ header .contact {
   margin-top: 10px;
 }
 
-#employment .employment-item {
+#content {
+  margin-bottom: 100px;
+}
+@media (min-width: 992px) {
+  #content .container {
+    max-width: 960px;
+  }
+}
+#content #employment .employment-item {
   margin-top: 50px;
 }
-#employment .employment-item .employment-logo {
+#content #employment .employment-item .employment-logo {
   margin-bottom: 10px;
 }
-#employment .employment-item .employment-logo img {
+#content #employment .employment-item .employment-logo img {
   height: 25px;
 }
-#employment .employment-item .employment-years,
-#employment .employment-item .employment-position {
+#content #employment .employment-item .employment-years,
+#content #employment .employment-item .employment-position {
   font-size: calc(1rem + 0.3vw);
 }
-
-#education .education-years {
+#content #education .education-years {
   font-family: "PixelOperator-Bold", sans-serif;
 }

@@ -25,10 +25,11 @@
 
 body{
     font-family: "PixelOperator", sans-serif;
+    color: #04394c;
 }
 
 div, section{
-    border: 1px solid tomato;
+    // border: 1px solid tomato;
 }
 
 section{
@@ -50,27 +51,39 @@ address{
 
 .section-heading{
     font-family: "PixelOperator-Bold";
-    border-bottom: 1px dashed cadetblue;
+    border-bottom: 1px dashed tomato;
 }
 
 // Particular styles
 
 header{
-    background-color: cadetblue;
-    padding: 20px 0;
+    background-color: #04394c;
+    color: white;
+    padding: 40px 0;
+    
+    .col-picture{
+        text-align: center;
+        margin-bottom: 20px;
 
-    img{
-        border-radius: 75px;
+        img{
+            border-radius: 100px;
+            @media(min-width: 768px){
+                width: 100%;
+            }
+        }
+    
     }
 
     a{
-        color: floralwhite;
-        text-decoration: none;
+        color: tomato;
+        // text-decoration: none;
     }
 
     .col-information{
-        padding-left: 40px;
-
+       /*  @media(min-width: 768px) {
+            padding-left: 40px;
+        } */
+        
         h1.my-name{
             font-family: "PixelOperator-Bold", sans-serif;
         }
@@ -82,31 +95,44 @@ header{
 
 }
 
-#employment{
+#content{
+    margin-bottom: 100px;
 
-    .employment-item{
-        margin-top: 50px;
+    .container{
+        @media(min-width: 992px) {
+            max-width: 960px;
+        }
+    }
 
-        .employment-logo{
-            margin-bottom: 10px;
+    #employment{
 
-            img{
-                height: 25px;
-                
+        .employment-item{
+            margin-top: 50px;
+    
+            .employment-logo{
+                margin-bottom: 10px;
+    
+                img{
+                    height: 25px;
+                    
+                }
+            }
+    
+            .employment-years,
+            .employment-position{
+                font-size: calc(1rem + 0.3vw);
             }
         }
-
-        .employment-years,
-        .employment-position{
-            font-size: calc(1rem + 0.3vw);
+    }
+    
+    #education{
+    
+        .education-years{
+            font-family: "PixelOperator-Bold", sans-serif;
         }
     }
 }
 
-#education{
 
-    .education-years{
-        font-family: "PixelOperator-Bold", sans-serif;
-    }
-}
+
 
