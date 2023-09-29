@@ -11979,8 +11979,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "PixelOperator";
+  src: url("../fonts/PixelOperator.woff2") format("woff2"), url("../fonts/PixelOperator.woff1") format("woff");
+}
+@font-face {
+  font-family: "PixelOperator-Bold";
+  src: url("../fonts/PixelOperator-Bold.woff2") format("woff2"), url("../fonts/PixelOperator-Bold.woff") format("woff");
+}
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "PixelOperator", sans-serif;
 }
 
 div, section {
@@ -11991,17 +11999,17 @@ section {
   margin-top: 40px;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
 p {
   margin-bottom: 0;
 }
 
 address {
   margin-bottom: 0;
+}
+
+.section-heading {
+  font-family: "PixelOperator-Bold";
+  border-bottom: 1px dashed cadetblue;
 }
 
 header {
@@ -12011,16 +12019,34 @@ header {
 header img {
   border-radius: 75px;
 }
+header a {
+  color: floralwhite;
+  text-decoration: none;
+}
 header .col-information {
   padding-left: 40px;
+}
+header .col-information h1.my-name, header .col-information .my-name.h1 {
+  font-family: "PixelOperator-Bold", sans-serif;
 }
 header .contact {
   margin-top: 10px;
 }
 
 #employment .employment-item {
-  margin-top: 20px;
+  margin-top: 50px;
 }
-#employment .employment-item .employment-years {
-  font-style: italic;
+#employment .employment-item .employment-logo {
+  margin-bottom: 10px;
+}
+#employment .employment-item .employment-logo img {
+  height: 25px;
+}
+#employment .employment-item .employment-years,
+#employment .employment-item .employment-position {
+  font-size: calc(1rem + 0.3vw);
+}
+
+#education .education-years {
+  font-family: "PixelOperator-Bold", sans-serif;
 }
