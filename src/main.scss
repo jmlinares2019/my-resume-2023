@@ -7,6 +7,106 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+
+// Fonts
+@font-face {
+    font-family: "PixelOperator";
+    src: url('../fonts/PixelOperator.woff2') format('woff2'),
+        url('../fonts/PixelOperator.woff1') format('woff');
+}
+
+@font-face {
+    font-family: "PixelOperator-Bold";
+    src: url('../fonts/PixelOperator-Bold.woff2') format('woff2'),
+        url('../fonts/PixelOperator-Bold.woff') format('woff');
+}
+
+// Global styles (resets)
+
+body{
+    font-family: "PixelOperator", sans-serif;
+}
+
 div, section{
     border: 1px solid tomato;
 }
+
+section{
+    margin-top: 40px;
+}
+
+ul{
+    // list-style-type: none;
+    // padding-left: 0;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+address{
+    margin-bottom: 0;
+}
+
+.section-heading{
+    font-family: "PixelOperator-Bold";
+    border-bottom: 1px dashed cadetblue;
+}
+
+// Particular styles
+
+header{
+    background-color: cadetblue;
+    padding: 20px 0;
+
+    img{
+        border-radius: 75px;
+    }
+
+    a{
+        color: floralwhite;
+        text-decoration: none;
+    }
+
+    .col-information{
+        padding-left: 40px;
+
+        h1.my-name{
+            font-family: "PixelOperator-Bold", sans-serif;
+        }
+    }
+
+    .contact{
+        margin-top: 10px;
+    }
+
+}
+
+#employment{
+
+    .employment-item{
+        margin-top: 50px;
+
+        .employment-logo{
+            margin-bottom: 10px;
+
+            img{
+                height: 25px;
+                
+            }
+        }
+
+        .employment-years,
+        .employment-position{
+            font-size: calc(1rem + 0.3vw);
+        }
+    }
+}
+
+#education{
+
+    .education-years{
+        font-family: "PixelOperator-Bold", sans-serif;
+    }
+}
+
