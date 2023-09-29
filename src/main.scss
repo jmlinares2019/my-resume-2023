@@ -7,22 +7,37 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
-body{
-    font-family: "Barlow", sans-serif;
+
+// Fonts
+@font-face {
+    font-family: "PixelOperator";
+    src: url('../fonts/PixelOperator.woff2') format('woff2'),
+        url('../fonts/PixelOperator.woff1') format('woff');
 }
-div, section{
-    border: 1px solid tomato;
+
+@font-face {
+    font-family: "PixelOperator-Bold";
+    src: url('../fonts/PixelOperator-Bold.woff2') format('woff2'),
+        url('../fonts/PixelOperator-Bold.woff') format('woff');
 }
 
 // Global styles (resets)
+
+body{
+    font-family: "PixelOperator", sans-serif;
+}
+
+div, section{
+    border: 1px solid tomato;
+}
 
 section{
     margin-top: 40px;
 }
 
 ul{
-    list-style-type: none;
-    padding-left: 0;
+    // list-style-type: none;
+    // padding-left: 0;
 }
 
 p{
@@ -31,6 +46,11 @@ p{
 
 address{
     margin-bottom: 0;
+}
+
+.section-heading{
+    font-family: "PixelOperator-Bold";
+    border-bottom: 1px dashed cadetblue;
 }
 
 // Particular styles
@@ -44,11 +64,16 @@ header{
     }
 
     a{
-        // color: wheat !important;
+        color: floralwhite;
+        text-decoration: none;
     }
 
     .col-information{
         padding-left: 40px;
+
+        h1.my-name{
+            font-family: "PixelOperator-Bold", sans-serif;
+        }
     }
 
     .contact{
@@ -60,11 +85,28 @@ header{
 #employment{
 
     .employment-item{
-        margin-top: 20px;
+        margin-top: 50px;
 
-        .employment-years{
-            font-style: italic;
+        .employment-logo{
+            margin-bottom: 10px;
+
+            img{
+                height: 25px;
+                
+            }
         }
+
+        .employment-years,
+        .employment-position{
+            font-size: calc(1rem + 0.3vw);
+        }
+    }
+}
+
+#education{
+
+    .education-years{
+        font-family: "PixelOperator-Bold", sans-serif;
     }
 }
 
